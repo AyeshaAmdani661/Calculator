@@ -5,8 +5,17 @@
     outline: 0;
     transition: all 0.5s ease;
 }
-
 body {
     font-family: sans-serif;
     background: linear-gradient(to bottom right,rgba(79,51,176,1),rgba(210,53,165));    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
 }
