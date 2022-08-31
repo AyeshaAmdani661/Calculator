@@ -42,7 +42,6 @@ buttons.forEach((item) => {
         }
         else if (item.id == 'half') {
             display.value = display.value / 2;
-
         }
         else if (item.id == 'fact') {
             var i, num, f;
@@ -53,7 +52,7 @@ buttons.forEach((item) => {
             }
             i = i - 1;
             display.value = f;
-            f.toFixed(9)
+            f.toFixed(9);
         }
         else if (item.id == '+/-') {
             display.value = -(display.value);

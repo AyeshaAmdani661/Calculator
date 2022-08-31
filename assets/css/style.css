@@ -9,10 +9,6 @@ body {
     font-family: sans-serif;
     background-color: #071115;
 }
-a{
-    text-decoration: none;
-    color: #fff;
-}
 .container{
     height: 100vh;
     width: 100vw;
@@ -48,7 +44,6 @@ a{
 .toggler-icon::before{
     content: '';
     height: 30px;
-    /* width: 30px; */
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -114,6 +109,16 @@ button#equal{
     background-color: #ca0000;
     color: #fff;  
 }
+#scientific{
+    display: none;
+    padding: 10px;
+}
+#scientific button{
+    width: 50px;
+}
+#sim{
+    display: none;
+}
 .calculator span{
     position: absolute;
     top: 15%;
@@ -155,14 +160,4 @@ button#equal{
 .calculator.dark span{
     color: #fff;
     background-color: transparent;
-}
-#scientific{
-    display: none;
-    padding: 10px;
-}
-#scientific button{
-    width: 50px;
-}
-#sim{
-    display: none;
 }
