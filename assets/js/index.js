@@ -10,6 +10,12 @@ buttons.forEach((item) => {
             let str = display.value.toString();
             display.value = str.substr(0, str.length - 1);
         }
+        else if (item.id == '%') {
+            display.value = display.value/100;
+        }
+        else if (item.id == '+/-') {
+            display.value = -(display.value);
+        }
         else if (display.value != '' && item.id == 'equal') {
             display.value = eval(display.value);
         }

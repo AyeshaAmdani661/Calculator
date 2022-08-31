@@ -7,7 +7,6 @@
 }
 body {
     font-family: sans-serif;
-    /* background: linear-gradient(to bottom right,#b1e5fc,#e4b1fc);     */
     background-color: #071115;
 }
 a{
@@ -25,7 +24,6 @@ a{
     height: auto;
     width: auto;
     padding: 20px;
-    /* border-radius: 10px; */
     box-shadow: 0 0 10px #000;
 }
 .toggler-icon{
@@ -82,13 +80,14 @@ a{
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 20%;
+    top: 25%;
+    right: 10%;
     text-align: right;
     cursor: pointer;
 }
 button{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 55px;
     border: 0;
     border-radius: 10px;
     margin: 5px;
@@ -104,14 +103,22 @@ button:hover{
     color: #fff;
 }
 button#equal{
-    height: 130px;
+    height: 70px;
+    background-color: #007fb9;
+}
+img{
+    width: 23px;
+    height: 17px;
 }
 /* light-theme */
 
 .calculator{
     background-color: #fff;
 }
-.calculator.display{
+.calculator input,.calculator input::placeholder {
+    color: #0a1e23;
+}
+.calculator.display {
     color: #0a1e23;
 }
 .calculator button.btn-operator{
@@ -132,6 +139,23 @@ button#equal{
 .calculator.dark button{
     color: #fff;
 }
-.calculator.dark input{
+.calculator.dark input,.calculator.dark input::placeholder{
     color: #fff;
+}
+#simple{
+    display: block;
+}
+#scientific{
+    display: none;
+    background-color: #009edd;
+    padding: 10px;
+    /* border-radius: 10px; */
+}
+#scientific button#equal{
+    height: 100px;
+    background-color: #00334b;
+}
+#scientific button{
+    color: #fff;
+    width: 50px;
 }
