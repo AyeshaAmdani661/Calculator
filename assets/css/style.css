@@ -110,6 +110,17 @@ img{
     width: 23px;
     height: 17px;
 }
+.calculator span{
+    position: absolute;
+    top: 12%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.calculator span i{
+    font-size: 25px;
+}
 /* light-theme */
 
 .calculator{
@@ -142,20 +153,23 @@ img{
 .calculator.dark input,.calculator.dark input::placeholder{
     color: #fff;
 }
-#simple{
-    display: block;
+.calculator.dark span{
+    color: #fff;
+    background-color: #071115;
 }
 #scientific{
     display: none;
-    background-color: #009edd;
     padding: 10px;
-    /* border-radius: 10px; */
+    background-color: #00334b;
 }
 #scientific button#equal{
     height: 100px;
-    background-color: #00334b;
+    background-color: #0279a8;
 }
 #scientific button{
     color: #fff;
     width: 50px;
+}
+#sim{
+    display: none;
 }
