@@ -18,8 +18,8 @@
                 <b class="toggler-icon dark-theme">Dark</b>
             </div>
             <div class="calc">
-                    <span id="sim" onclick="simpleCalc()"><i class="fa-solid fa-angle-left"></i> Standard</span>
-                    <span id="sci" onclick="scientificCalc()">Scientific <i class="fa-solid fa-angle-right"></i></span>          
+                    <span id="sim"><i class="fa-solid fa-angle-left"></i> Standard</span>
+                    <span id="sci">Scientific <i class="fa-solid fa-angle-right"></i></span>          
             </div>
             <div class="display-screen">
                 <div class="display"></div>
@@ -30,28 +30,28 @@
             <div class="buttons">
                 <table id="simple">
                     <tr>
-                        <td><button class="btn-operator" id="clear">C</button></td>
-                        <td><button class="btn-operator" id="/">&divide;</button></td>
-                        <td><button class="btn-operator" id="%">%</button></td>
-                        <td><button class="btn-operator" id="backspace"><img src="./assets/img/bg.jpg" alt="back"></button></td>
+                        <td><button id="clear">C</button></td>
+                        <td><button id="/">&divide;</button></td>
+                        <td><button id="%">%</button></td>
+                        <td><button id="backspace"><i class="fa-solid fa-delete-left"></i></button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn-number" id="7">7</button></td>
-                        <td><button class="btn-number" id="8">8</button></td>
-                        <td><button class="btn-number" id="9">9</button></td>
-                        <td><button class="btn-operator" id="-">-</button></td>
+                        <td><button id="7">7</button></td>
+                        <td><button id="8">8</button></td>
+                        <td><button id="9">9</button></td>
+                        <td><button id="-">-</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn-number" id="4">4</button></td>
-                        <td><button class="btn-number" id="5">5</button></td>
-                        <td><button class="btn-number" id="6">6</button></td>
-                        <td><button class="btn-operator" id="+">+</button></td>
+                        <td><button id="4">4</button></td>
+                        <td><button id="5">5</button></td>
+                        <td><button id="6">6</button></td>
+                        <td><button id="+">+</button></td>
                     </tr>
                     <tr>
-                        <td><button class="btn-number" id="1">1</button></td>
-                        <td><button class="btn-number" id="2">2</button></td>
-                        <td><button class="btn-number" id="3">3</button></td>
-                        <td><button class="btn-operator" id="*">&times;</button></td>
+                        <td><button id="1">1</button></td>
+                        <td><button id="2">2</button></td>
+                        <td><button id="3">3</button></td>
+                        <td><button id="*">&times;</button></td>
 
                     </tr>
                     <tr>
@@ -64,28 +64,28 @@
                 <table id="scientific">
                     <tr>
                         <td><button id="clear">C</button></td>
-                        <td><button class="btn-operator" id="(">(</button></td>
-                        <td><button class="btn-operator" id=")">)</button></td>
-                        <td><button class="btn-operator" id="backspace"><img src="./assets/img/bg.jpg" alt="back"></button></td>
+                        <td><button id="(">(</button></td>
+                        <td><button id=")">)</button></td>
+                        <td><button id="backspace"><i class="fa-solid fa-delete-left"></i></button></td>
                     </tr>
                     <tr>
-                        <td><button id="sin(">sin</button></td>
-                        <td><button id="cos(">cos</button></td>
-                        <td><button id="tan(">tan</button></td>
+                        <td><button id="sin">sin</button></td>
+                        <td><button id="cos">cos</button></td>
+                        <td><button id="tan">tan</button></td>
+                        <td><button id="log">log</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="half">1/2</button></td>
+                        <td><button id="square"><b>&Sqrt;</b></button></td>
+                        <td><button id="pi">&pi;</button></td>
                         <td><button id="e">e</button></td>
 
                     </tr>
                     <tr>
-                        <td><button id="log(">log</button></td>
-                        <td><button id="√">&Sqrt;</button></td>
-                        <td><button id="2">&pi;</button></td>
-                        <td rowspan="2"><button class="btn-operator" id="equal">=</button></td>
-
-                    </tr>
-                    <tr>
-                        <td><button id="x2">x <sup>2</sup></button></td>
-                        <td><button id="x2">x <sup>3</sup></button></td>
-                        <td><button id="x!">x!</button></td>
+                        <td><button id="power">x <sup>2</sup></button></td>
+                        <td><button id="cube">x <sup>3</sup></button></td>
+                        <td><button id="fact">x!</button></td>
+                        <td><button class="btn-operator" id="equal">=</button></td>
                     </tr>
                 </table>
             </div>

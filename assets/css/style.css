@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 body {
     font-family: sans-serif;
@@ -103,24 +103,26 @@ button:hover{
     color: #fff;
 }
 button#equal{
-    height: 70px;
-    background-color: #007fb9;
+    height: 60px;
+    color: #f8fafd;
+    background-color: #0279a8;
 }
-img{
-    width: 23px;
-    height: 17px;
+.calculator button#clear{
+    color: #ca0000;
+}
+.calculator button#clear:hover{
+    background-color: #ca0000;
+    color: #fff;  
 }
 .calculator span{
     position: absolute;
-    top: 12%;
+    top: 15%;
     background-color: transparent;
     border: none;
     font-size: 30px;
     cursor: pointer;
 }
-.calculator span i{
-    font-size: 25px;
-}
+
 /* light-theme */
 
 .calculator{
@@ -133,12 +135,9 @@ img{
     color: #0a1e23;
 }
 .calculator button.btn-operator{
-    color: #fff;
     background-color: green;
 }
-.calculator button#clear{
-    background-color: #ca0000;
-}
+
 /* dark-theme */
 
 .calculator.dark {
@@ -155,19 +154,13 @@ img{
 }
 .calculator.dark span{
     color: #fff;
-    background-color: #071115;
+    background-color: transparent;
 }
 #scientific{
     display: none;
     padding: 10px;
-    background-color: #00334b;
-}
-#scientific button#equal{
-    height: 100px;
-    background-color: #0279a8;
 }
 #scientific button{
-    color: #fff;
     width: 50px;
 }
 #sim{
