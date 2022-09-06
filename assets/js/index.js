@@ -65,7 +65,7 @@ buttons.forEach((item) => {
             setTimeout(() => (display.value = ''), 2000);
         }
         else {
-            display.value += item.innerHTML;
+            display.value += item.id;
         }
     });
 });
